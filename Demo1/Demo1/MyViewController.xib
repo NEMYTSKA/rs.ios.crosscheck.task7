@@ -10,6 +10,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyViewController">
             <connections>
+                <outlet property="authoriseTextField" destination="AE2-Si-iAm" id="F3v-Oq-VhP"/>
+                <outlet property="button1" destination="bhB-JM-QpZ" id="FaM-Kh-bD5"/>
+                <outlet property="button2" destination="faC-vU-0DA" id="W3P-EM-YHV"/>
+                <outlet property="button3" destination="FjR-sg-JC6" id="kF0-F9-dbR"/>
+                <outlet property="loginTextField" destination="R5i-Yu-uy4" id="ahv-1A-O5g"/>
+                <outlet property="passwordTextField" destination="8Kb-tF-sd6" id="14e-W3-2Jg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -34,20 +40,67 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Authorise" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AE2-Si-iAm">
+                    <rect key="frame" x="109" y="351" width="156" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="156" id="G5u-oC-GpN"/>
+                        <constraint firstAttribute="height" constant="42" id="gvM-3G-tgu"/>
+                    </constraints>
+                    <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="8V6-6k-tP1">
+                    <rect key="frame" x="54.5" y="483" width="266" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhB-JM-QpZ">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="SDi-nR-jjQ"/>
+                                <constraint firstAttribute="width" constant="60" id="b5E-Gw-fBf"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="1">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faC-vU-0DA">
+                            <rect key="frame" x="103" y="0.0" width="60" height="60"/>
+                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="2">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjR-sg-JC6">
+                            <rect key="frame" x="206" y="0.0" width="60" height="60"/>
+                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="3">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                </stackView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="R5i-Yu-uy4" secondAttribute="trailing" constant="36" id="1w1-bI-VFB"/>
                 <constraint firstItem="frm-bt-hkR" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="80" id="3pH-dg-C89"/>
+                <constraint firstItem="8V6-6k-tP1" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="B7N-Sh-4fG"/>
                 <constraint firstItem="frm-bt-hkR" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="BAe-An-9hB"/>
                 <constraint firstItem="8Kb-tF-sd6" firstAttribute="top" secondItem="R5i-Yu-uy4" secondAttribute="bottom" constant="30" id="L7z-yU-4le"/>
+                <constraint firstItem="AE2-Si-iAm" firstAttribute="top" secondItem="8Kb-tF-sd6" secondAttribute="bottom" constant="60" id="MmM-GU-khm"/>
                 <constraint firstItem="8Kb-tF-sd6" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="36" id="VXw-IK-xKl"/>
+                <constraint firstItem="8V6-6k-tP1" firstAttribute="top" secondItem="AE2-Si-iAm" secondAttribute="bottom" constant="90" id="dbr-sy-2PY"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="AE2-Si-iAm" secondAttribute="trailing" constant="110" id="gSe-zb-0gE"/>
                 <constraint firstItem="R5i-Yu-uy4" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="36" id="j3w-ka-Kcu"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="8Kb-tF-sd6" secondAttribute="trailing" constant="36" id="ldv-w4-Y5m"/>
                 <constraint firstItem="R5i-Yu-uy4" firstAttribute="top" secondItem="frm-bt-hkR" secondAttribute="bottom" constant="70" id="xWH-6m-rzA"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <point key="canvasLocation" x="139" y="151"/>
+            <point key="canvasLocation" x="138.40000000000001" y="150.67466266866569"/>
         </view>
     </objects>
 </document>

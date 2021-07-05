@@ -8,7 +8,16 @@
 
 #import "MyViewController.h"
 
-@interface MyViewController ()
+@interface MyViewController () <UITextViewDelegate, UITextFieldDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextField *loginTextField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet UITextField *authoriseTextField;
+@property (weak, nonatomic) IBOutlet UIButton *button1;
+@property (weak, nonatomic) IBOutlet UIButton *button2;
+@property (weak, nonatomic) IBOutlet UIButton *button3;
+
+
 
 @end
 
@@ -16,9 +25,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    self.loginTextField.layer.cornerRadius = 5.0;
+    self.passwordTextField.layer.cornerRadius = 5.0;
+    
+    self.button1.layer.borderColor = UIColor.blackColor.CGColor;
+ 
+    self.button1.layer.cornerRadius = self.button1.frame.size.height / 2;
+    self.button2.layer.cornerRadius = self.button2.frame.size.height / 2;
+    self.button3.layer.cornerRadius = self.button3.frame.size.height / 2;
+    
+    self.loginTextField.delegate = self;
+    self.passwordTextField.delegate = self;
+
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    return [self.passwordTextField becomeFirstResponder];
 }
 
+
+
+
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+
+    return ![string containsString:@"a"];
+}
 /*
 #pragma mark - Navigation
 
