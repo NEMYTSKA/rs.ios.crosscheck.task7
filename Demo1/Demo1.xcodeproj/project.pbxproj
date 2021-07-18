@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49726DB826970DE5003738FD /* UIColor+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 49726DB726970DE5003738FD /* UIColor+Color.m */; };
+		4981CBE82695F0760064C230 /* NumberBytton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4981CBE72695F0760064C230 /* NumberBytton.m */; };
 		49C68BBB26932A2D00480292 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C68BB926932A2D00480292 /* MyViewController.m */; };
 		49C68BBC26932A2D00480292 /* MyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C68BBA26932A2D00480292 /* MyViewController.xib */; };
+		49C7123B269C4F0D00F833D1 /* MyAuthButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C7123A269C4F0D00F833D1 /* MyAuthButton.m */; };
+		49C71240269C5A4200F833D1 /* MyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C7123F269C5A4200F833D1 /* MyTextField.m */; };
+		49C71244269C8E5300F833D1 /* MyOnOffBytton.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C71243269C8E5300F833D1 /* MyOnOffBytton.m */; };
 		90ECF93F2428B52500D33CED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ECF93E2428B52500D33CED /* AppDelegate.m */; };
 		90ECF9472428B52500D33CED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90ECF9462428B52500D33CED /* Assets.xcassets */; };
 		90ECF94A2428B52500D33CED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90ECF9482428B52500D33CED /* LaunchScreen.storyboard */; };
@@ -16,9 +21,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49726DB626970DE5003738FD /* UIColor+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Color.h"; sourceTree = "<group>"; };
+		49726DB726970DE5003738FD /* UIColor+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Color.m"; sourceTree = "<group>"; };
+		4981CBE62695F0760064C230 /* NumberBytton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberBytton.h; sourceTree = "<group>"; };
+		4981CBE72695F0760064C230 /* NumberBytton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberBytton.m; sourceTree = "<group>"; };
 		49C68BB826932A2D00480292 /* MyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		49C68BB926932A2D00480292 /* MyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		49C68BBA26932A2D00480292 /* MyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyViewController.xib; sourceTree = "<group>"; };
+		49C71239269C4F0D00F833D1 /* MyAuthButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAuthButton.h; sourceTree = "<group>"; };
+		49C7123A269C4F0D00F833D1 /* MyAuthButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAuthButton.m; sourceTree = "<group>"; };
+		49C7123E269C5A4200F833D1 /* MyTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTextField.h; sourceTree = "<group>"; };
+		49C7123F269C5A4200F833D1 /* MyTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTextField.m; sourceTree = "<group>"; };
+		49C71242269C8E5300F833D1 /* MyOnOffBytton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyOnOffBytton.h; sourceTree = "<group>"; };
+		49C71243269C8E5300F833D1 /* MyOnOffBytton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyOnOffBytton.m; sourceTree = "<group>"; };
 		90ECF93A2428B52500D33CED /* Demo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90ECF93D2428B52500D33CED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		90ECF93E2428B52500D33CED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,11 +54,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49C7123C269C593D00F833D1 /* MyAuthButton */ = {
+			isa = PBXGroup;
+			children = (
+				49C71239269C4F0D00F833D1 /* MyAuthButton.h */,
+				49C7123A269C4F0D00F833D1 /* MyAuthButton.m */,
+			);
+			path = MyAuthButton;
+			sourceTree = "<group>";
+		};
+		49C7123D269C595500F833D1 /* NumberBytton */ = {
+			isa = PBXGroup;
+			children = (
+				4981CBE62695F0760064C230 /* NumberBytton.h */,
+				4981CBE72695F0760064C230 /* NumberBytton.m */,
+			);
+			path = NumberBytton;
+			sourceTree = "<group>";
+		};
+		49C71241269C61D900F833D1 /* MyTextField */ = {
+			isa = PBXGroup;
+			children = (
+				49C7123E269C5A4200F833D1 /* MyTextField.h */,
+				49C7123F269C5A4200F833D1 /* MyTextField.m */,
+			);
+			path = MyTextField;
+			sourceTree = "<group>";
+		};
+		49C71245269C8E6000F833D1 /* MyOnOffBytton */ = {
+			isa = PBXGroup;
+			children = (
+				49C71242269C8E5300F833D1 /* MyOnOffBytton.h */,
+				49C71243269C8E5300F833D1 /* MyOnOffBytton.m */,
+			);
+			path = MyOnOffBytton;
+			sourceTree = "<group>";
+		};
 		90ECF9312428B52500D33CED = {
 			isa = PBXGroup;
 			children = (
 				90ECF93C2428B52500D33CED /* Demo1 */,
 				90ECF93B2428B52500D33CED /* Products */,
+				90ECF94C2428B52500D33CED /* main.m */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,15 +110,20 @@
 		90ECF93C2428B52500D33CED /* Demo1 */ = {
 			isa = PBXGroup;
 			children = (
-				90ECF93D2428B52500D33CED /* AppDelegate.h */,
-				90ECF93E2428B52500D33CED /* AppDelegate.m */,
-				90ECF9462428B52500D33CED /* Assets.xcassets */,
-				90ECF9482428B52500D33CED /* LaunchScreen.storyboard */,
-				90ECF94B2428B52500D33CED /* Info.plist */,
-				90ECF94C2428B52500D33CED /* main.m */,
+				49726DB626970DE5003738FD /* UIColor+Color.h */,
+				49726DB726970DE5003738FD /* UIColor+Color.m */,
+				49C71241269C61D900F833D1 /* MyTextField */,
+				49C7123C269C593D00F833D1 /* MyAuthButton */,
+				49C7123D269C595500F833D1 /* NumberBytton */,
+				49C71245269C8E6000F833D1 /* MyOnOffBytton */,
 				49C68BB826932A2D00480292 /* MyViewController.h */,
 				49C68BB926932A2D00480292 /* MyViewController.m */,
 				49C68BBA26932A2D00480292 /* MyViewController.xib */,
+				90ECF93D2428B52500D33CED /* AppDelegate.h */,
+				90ECF93E2428B52500D33CED /* AppDelegate.m */,
+				90ECF94B2428B52500D33CED /* Info.plist */,
+				90ECF9482428B52500D33CED /* LaunchScreen.storyboard */,
+				90ECF9462428B52500D33CED /* Assets.xcassets */,
 			);
 			path = Demo1;
 			sourceTree = "<group>";
@@ -141,8 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C71244269C8E5300F833D1 /* MyOnOffBytton.m in Sources */,
 				49C68BBB26932A2D00480292 /* MyViewController.m in Sources */,
+				49C71240269C5A4200F833D1 /* MyTextField.m in Sources */,
+				49C7123B269C4F0D00F833D1 /* MyAuthButton.m in Sources */,
 				90ECF94D2428B52500D33CED /* main.m in Sources */,
+				4981CBE82695F0760064C230 /* NumberBytton.m in Sources */,
+				49726DB826970DE5003738FD /* UIColor+Color.m in Sources */,
 				90ECF93F2428B52500D33CED /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +342,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M3HNT6J9D;
 				INFOPLIST_FILE = Demo1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,6 +360,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M3HNT6J9D;
 				INFOPLIST_FILE = Demo1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
